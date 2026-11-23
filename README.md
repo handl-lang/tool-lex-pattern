@@ -3,7 +3,7 @@
 `hnl-tool-lex-pattern` — a data-driven lexer engine that reads
 `LexerRuleDef` fragments from a `Language` and tokenizes source text.
 
-An `engine-*` crate: the lex operation implemented generically — rules come
+A `tool-*` crate: the lex operation implemented generically — rules come
 from language data, never from hardcoded token tables.
 
 ## Development
