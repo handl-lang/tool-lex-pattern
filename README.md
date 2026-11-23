@@ -1,6 +1,6 @@
-# engine-lex-pattern
+# tool-lex-pattern
 
-`hnl-engine-lex-pattern` — a data-driven lexer engine that reads
+`hnl-tool-lex-pattern` — a data-driven lexer engine that reads
 `LexerRuleDef` fragments from a `Language` and tokenizes source text.
 
 An `engine-*` crate: the lex operation implemented generically — rules come
@@ -22,4 +22,4 @@ MIT.
 
 ## Documentation
 
-<https://handl-lang.github.io/docs/engine-lex-pattern/>
+<https://handl-lang.github.io/docs/tool-lex-pattern/>

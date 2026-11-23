@@ -6,13 +6,13 @@
 |---|---|
 | `LexerRuleDef` input | rule fragments read from `Language::lexer_rules` |
 | priority ordering | lowest `priority` wins first; ties keep declaration order |
-| `LexerEngine` impl | the `engine-lex` contract, satisfied without hard-coded patterns |
+| `LexerEngine` impl | the `tool-lex` contract, satisfied without hard-coded patterns |
 
 ## Crate
 
 | crate | role |
 |---|---|
-| `hnl-engine-lex-pattern` | engine implementation |
+| `hnl-tool-lex-pattern` | engine implementation |
 
 ## Build and test
 

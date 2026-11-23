@@ -12,5 +12,5 @@ This crate belongs to the `engine-*` family. Plugins, kits and hosts reach it
 through the kit's operation slot, so the engine can be swapped without touching a
 language definition.
 
-See the [reference](/engine-lex-pattern/reference/) for the API and the
-[how-to guides](/engine-lex-pattern/how-to/) for tasks.
+See the [reference](/tool-lex-pattern/reference/) for the API and the
+[how-to guides](/tool-lex-pattern/how-to/) for tasks.

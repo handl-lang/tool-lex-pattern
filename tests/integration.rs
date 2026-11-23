@@ -4,8 +4,8 @@
 
 use handl_kit_data_prelude::assemble;
 use handl_language::{Source, Token};
-use hnl_engine_lex::{LexerEngine, LexerRequest};
-use hnl_engine_lex_pattern::DataLexerEngine;
+use hnl_tool_lex::{LexerEngine, LexerRequest};
+use hnl_tool_lex_pattern::DataLexerEngine;
 
 fn lex(src: &str) -> Vec<Token> {
     let kit = assemble().unwrap();
