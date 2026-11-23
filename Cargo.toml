@@ -18,4 +18,4 @@ handl-language = { git = "https://github.com/handl-lang/kernel", branch = "main"
 hnl-engine-lex = { git = "https://github.com/handl-lang/engine-lex", branch = "main" }
 
 [dev-dependencies]
-handl-kit-data-prelude = { git = "https://github.com/handl-lang/kit-data-prelude", branch = "main" }
+handl-kit-data-prelude = { git = "https://github.com/handl-lang/host", branch = "main" }
