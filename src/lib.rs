@@ -454,7 +454,7 @@ mod tests {
     #[test]
     fn debug_lex_colon() {
         let lang = handl_kit_data_prelude::language_from_yaml().unwrap();
-        let src = "data Nat :: Zero | Succ(Nat)";
+        let src = "data Nat := Zero | Succ(Nat)";
         let toks = crate::lex(&lang, src).unwrap();
         for t in &toks.0 {
             eprintln!("  {} : '{}'", t.kind, t.text);

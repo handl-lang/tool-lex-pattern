@@ -55,8 +55,10 @@ fn lex_simple_expression() {
 }
 
 #[test]
-fn lex_bind_token_is_double_colon() {
-    let toks = lex("x :: 42");
+fn lex_colon_equal_is_binding_token() {
+    // `:=` is the ONLY binding operator (`token.colon_equal`); `::` is gone
+    // and `=`/`==` lex to `token.equal` (equality only).
+    let toks = lex("x := 42");
     assert_eq!(
         toks,
         vec![
@@ -66,8 +68,8 @@ fn lex_bind_token_is_double_colon() {
                 ..Default::default()
             },
             Token {
-                kind: "token.bind".into(),
-                text: "::".into(),
+                kind: "token.colon_equal".into(),
+                text: ":=".into(),
                 ..Default::default()
             },
             Token {
