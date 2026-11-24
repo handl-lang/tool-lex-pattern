@@ -82,16 +82,16 @@ fn lex_colon_equal_is_binding_token() {
 }
 
 #[test]
-fn lex_let_binding() {
-    // `let` is removed from the language (ADR-0079 completed): the text
-    // still lexes to the tombstone `token.keyword.let` (reserved word, no
-    // grammar row) — `token.let` is gone.
+fn lex_let_is_plain_identifier() {
+    // `let` is fully removed from the language: it is not a keyword or a
+    // reserved word, so the text lexes as `token.identifier` like any other
+    // name — `let` can be used as a variable/function name.
     let toks = lex("let x = 42");
     assert_eq!(
         toks,
         vec![
             Token {
-                kind: "token.keyword.let".into(),
+                kind: "token.identifier".into(),
                 text: "let".into(),
                 ..Default::default()
             },
@@ -101,7 +101,7 @@ fn lex_let_binding() {
                 ..Default::default()
             },
             Token {
-                kind: "token.bind".into(),
+                kind: "token.equal".into(),
                 text: "=".into(),
                 ..Default::default()
             },
